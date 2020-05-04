@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>维修单 on 维修系统操作文档</title>
+    <link>http://help.booofly.com/order/</link>
+    <description>Recent content in 维修单 on 维修系统操作文档</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 03 May 2020 06:23:54 +0800</lastBuildDate>
+    
+	<atom:link href="http://help.booofly.com/order/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>1. 业务流程</title>
+      <link>http://help.booofly.com/order/flow/</link>
+      <pubDate>Sun, 03 May 2020 06:26:37 +0800</pubDate>
+      
+      <guid>http://help.booofly.com/order/flow/</guid>
+      <description>维修单业务流程是最重要的流程。这个流程体现一个维修单从录入到结束包含了哪些角色，以及如何流转，正确的理解维修单的流转，才能正确的操作维修单。下图是维修单流转流程图：
+从流程图中可以看到高亮颜色的流程，代表门店中最常用的交易流程，即：从 新订单, 维修中，已修复，已完成，这整个过程就是最简单的前台接单，到维修员维修，到付款结束。
+流程分支说明： 业务流程中可能会产生分支，比如流程图中“维修中”状态的维修单，下一步可以是“已修复”，也可以是“申请退单”。这代表在“维修中”的单可以做退单和正常修复两种操作，从流程图上可以看出来。特别注意，“维修中”不能直接跳到已完成或者已取消，必须按预设业务流程来。
+订单状态解释   新订单
+首次录入的订单状态默认为“新订单”。
+  维修中
+当维修人员点击了 “领取” 按钮后，该师傅即有权限修改该维修单，并且维修单状态会变成 “维修中” 。
+  已修复
+当订单处于 “维修中” 状态时，维修人员进入修改订单，可以输入设备检查的问题，维修项目，维修价格等信息。然后点击 “维修完成” ，订单会进入 “已修复” 状态，代表已经维修完成，客户可以来拿回设备。
+  签单
+客户来拿回维修完成的设备时，可以选择签单，或者付款。如果 选择签单，订单会进入“签单”状态。签单即代表记账，未收到钱。
+  已完成
+客户来拿回维修完成的设备时，正常付款，可以点击 “收款” 并选择客户付款的方式，点击“确认”即可完成。订单会进入 “已完成” 状态。
+  申请退单
+当维修人员领取订单并检测设备后，发现无法维修，或者因客户原因不想维修，可以进行 “申请退回订单”，提交申请后，订单状态会变成 “申请退单”。方便前台或者管理员进行维修单取消。
+  已取消
+有多种情况可以取消维修单，取消后的维修单不能再激活回到其它非取消状态，取消单操作是不可逆的。
+  已受理
+该状态已经弃用。
+  </description>
+    </item>
+    
+    <item>
+      <title>2. 新增维修单</title>
+      <link>http://help.booofly.com/order/add/</link>
+      <pubDate>Sun, 03 May 2020 06:13:52 +0800</pubDate>
+      
+      <guid>http://help.booofly.com/order/add/</guid>
+      <description>以下为创建新维修单的界面： 新维修单通常由 “接单员” 录入基本信息，基本信息包括：
+ 姓名
+联系方式
+型号
+IMEI
+快递公司
+快递单号
+问题描述
+ 录入上面几项信息，点击 &amp;ldquo;新建从此单&amp;rdquo; 即可创建一个新的维修单。新维修单会出现在可领取的维修单列表中。剩余的另外几项信息，留给维修人员在维修完设备后再进行更新，具体操作可查看 完成维修单。</description>
+    </item>
+    
+    <item>
+      <title>3. 领取订单</title>
+      <link>http://help.booofly.com/order/assign/</link>
+      <pubDate>Sun, 03 May 2020 07:50:37 +0800</pubDate>
+      
+      <guid>http://help.booofly.com/order/assign/</guid>
+      <description>在领取新订单页面中，可以看到所有新维修单，并查看到维修单的基本故障信息，点击 &amp;ldquo;领取&amp;rdquo; 按钮即可领取为自己的维修单，同时订单状态会变成“维修中”。
+也可以在订单号搜索框中输入单号，快速查找要领取的维修单，点击领取，即可领取维修单。
+权限：只有维修人员和管理员账号才有权限领取维修单。</description>
+    </item>
+    
+    <item>
+      <title>4. 取消订单</title>
+      <link>http://help.booofly.com/order/cancel/</link>
+      <pubDate>Sun, 03 May 2020 07:49:18 +0800</pubDate>
+      
+      <guid>http://help.booofly.com/order/cancel/</guid>
+      <description>取消订单只能在订单详情页面进行操作。在维修单列表页面，最右侧按钮中，有一个“查看详情”的图标，点击后进入到维修单的详情页面，再点击右下角的“取消”按钮，即可取消订单。
+维修单只能在完成维修单可取消，如果维修单进入&amp;quot;已修复&amp;quot;后在状态，即不能再取消。具体维修单状态流转流程请查看 业务流程。
+权限：只有前台和管理员账号可以进行取消维修单操作。</description>
+    </item>
+    
+    <item>
+      <title>5. 维修单收款</title>
+      <link>http://help.booofly.com/order/pay/</link>
+      <pubDate>Sun, 03 May 2020 06:13:59 +0800</pubDate>
+      
+      <guid>http://help.booofly.com/order/pay/</guid>
+      <description>收款操作会让维修单进入 “已完成” 状态，所以维修单“完成”即是已经代表收款完成。
+只有维修单详情页中才有收款按钮，可以在维修单管理页面进行查询，点击详情按钮，进入维修单详情页，会看到 &amp;ldquo;收款&amp;quot;按钮。请注意，维修单只有处在 &amp;ldquo;已修复&amp;rdquo; 状态才收进行收款，其它状态下的维修单是看不到收款按钮的。下面展示了维修单的详情页面：
+为了方便查看维修单的内容，分清主次信息，维修单详情页设计为五大块内容：
+ 订单号和订单创建时间 订单详细信息 顾客信息 维修项目详情和价格详细 操作按钮区
+需要注意：操作按钮区的按钮，会根据维修单状态的不同，显示不同的操作按钮。因为为了保证业务正常运转，以及保护维修单的数据不会被随意修改。系统预设了维修单不同状态的可操作性，是不一样的。  </description>
+    </item>
+    
+    <item>
+      <title>6. 打印维修单</title>
+      <link>http://help.booofly.com/order/pringorder/</link>
+      <pubDate>Sun, 03 May 2020 08:47:53 +0800</pubDate>
+      
+      <guid>http://help.booofly.com/order/pringorder/</guid>
+      <description>系统目前支持维修单小票打印，通常可以在接收客户设备后，创建一个新维修单，然后打印小票给客户，等维修完成后，可以凭小票取回设备。
+打印功能在维修单详情页中，点击要打印的维修单查看详情，页面底部会有一个 &amp;ldquo;打印小票&amp;rdquo; 按钮，点击打印，系统会弹出浏览器自带的打印窗口，如果已经正确配置小票打印机，只要选择对应的打印机，即可打印。</description>
+    </item>
+    
+    <item>
+      <title>7. 打印二维码</title>
+      <link>http://help.booofly.com/order/qrcode/</link>
+      <pubDate>Sun, 03 May 2020 07:47:14 +0800</pubDate>
+      
+      <guid>http://help.booofly.com/order/qrcode/</guid>
+      <description>打印二维码功能有两个入口，一个是在维修单详情页，页面底部可以看到“打印二维码”按钮。另一个入口在系统顶部菜单中。
+打印二维码主要使用场景是利用不干胶标签打印机，将二维码打印出来后贴在客户机器的背部，方便快速标记客户机器。后面想要查看这个机器的信息，只要进入系统的维修单查询页面，选中“按单号查询”的输入框，然后用扫描枪扫机器上的二维码，就可以找到机器对应的维修单。打印出来的二维码样式如下，包括顾客姓名，电话号码和单号：</description>
+    </item>
+    
+  </channel>
+</rss>
