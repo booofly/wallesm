@@ -64,7 +64,7 @@ IMEI
       <guid>http://help.booofly.com/order/assign/</guid>
       <description>在领取新订单页面中，可以看到所有新维修单，并查看到维修单的基本故障信息，点击 &amp;ldquo;领取&amp;rdquo; 按钮即可领取为自己的维修单，同时订单状态会变成“维修中”。
 也可以在订单号搜索框中输入单号，快速查找要领取的维修单，点击领取，即可领取维修单。
-权限：只有维修人员和管理员账号才有权限领取维修单。</description>
+ 权限：只有维修人员和管理员账号才有权限领取维修单。</description>
     </item>
     
     <item>
@@ -75,7 +75,7 @@ IMEI
       <guid>http://help.booofly.com/order/cancel/</guid>
       <description>取消订单只能在订单详情页面进行操作。在维修单列表页面，最右侧按钮中，有一个“查看详情”的图标，点击后进入到维修单的详情页面，再点击右下角的“取消”按钮，即可取消订单。
 维修单只能在完成维修单可取消，如果维修单进入&amp;quot;已修复&amp;quot;后在状态，即不能再取消。具体维修单状态流转流程请查看 业务流程。
-权限：只有前台和管理员账号可以进行取消维修单操作。</description>
+ 权限：只有前台和管理员账号可以进行取消维修单操作。</description>
     </item>
     
     <item>
